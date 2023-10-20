@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio02</title>
+    <title>ejercicio04</title>
 </head>
 <body>
     <?php echo
         "<h1>Introduccion</h1>
-         <h3>Ejercicio2</h3>";
+         <h3>Ejercicio4</h3>";
 
          $nombre =  $_GET["nombre"];
          $edad =  $_GET["edad"];
