@@ -6,9 +6,15 @@
     <title>ejercicio01</title>
 </head>
 <body>
-    <?php
+    <?php echo
         "<h1>Introduccion</h1>
-         <h3>Ejercicio1</h3>"
+         <h3>Ejercicio1</h3>";
+
+         $nombre = "Markel";
+         $edad = "20";
     ?>
+
+    <?= $nombre, $edad?>
+
 </body>
 </html>
