@@ -8,4 +8,3 @@ $texto1 = "Hola, ";
 $concatenacion = concatenarCadenas($texto1);
 
 require 'ejercicio11.view.php';
-?>
