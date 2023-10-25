@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Introducción</h1>
-    <h3>Ejercicio 22</h3>
+    <h3>Ejercicio 24</h3>
     <h1>Agenda de Contactos</h1>
     <table border="1">
         <tr>
