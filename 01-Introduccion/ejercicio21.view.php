@@ -1,19 +1,17 @@
-<?php
-function sumarNumerosPares($numero) {
-    $suma = 0;
-    for ($i = 0; $i <= $numero; $i++) {
-        if ($i % 2 == 0) {
-            $suma += $i;
-            if ($suma > 100) {
-                return $suma - $i; 
-            }
-        }
-    }
-    return $suma;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+</head>
+<body>
+    <h1>Introducción</h1>
+    <h3>Ejercicio 21</h3>
 
-$numero = $_GET['numero'];
-
-$sumaTotal = sumarNumerosPares($numero);
-
-require 'ejercicio21.view.php';
+    <?php
+    echo "Número ingresado: $numero<br>";
+    echo "La suma de los números pares antes de superar 100 es: $sumaTotal";
+    ?>
+</body>
+</html>
