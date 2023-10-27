@@ -14,8 +14,8 @@
     </style>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <form action="#" method="post">
+    <h1>Formularios</h1>
+    <h3>Ejercicio 2</h3>    <form action="#" method="post">
         <label for="num1">Número 1</label>
         <input type="number" id="num1" name="num1" required>
         <label for="num2">Número 2</label>
