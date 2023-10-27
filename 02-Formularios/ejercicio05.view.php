@@ -6,73 +6,72 @@
     <title>Tienda Online</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-        }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        h1 {
-            text-align: center;
-        }
+.product {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        form {
-            margin-top: 20px;
-        }
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
 
-        div {
-            margin-bottom: 15px;
-        }
+.product input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
-        label {
-            font-weight: bold;
-        }
+.product button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
 
-        input[type="number"] {
-            width: 60px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
+.product button:hover {
+    background-color: #45a049;
+}
 
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
+.total {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        h2 {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        a {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #4caf50;
-        }
     </style>
 </head>
 <body>
+   
     <div class="container">
         <h1>Catálogo de Productos</h1>
         <form method="post" action="ejercicio05.php">
@@ -80,6 +79,7 @@
                 <div>
                     <label for="producto_<?php echo $producto['id']; ?>">
                         <?php echo $producto["nombre"]; ?> - <?php echo $producto["precio"]; ?>€
+                        <p><?php echo $producto["descripcion"]; ?></p>
                     </label>
                     <input type="number" name="producto_<?php echo $producto['id']; ?>" min="0">
                 </div>
@@ -92,5 +92,6 @@
             <a href="ejercicio05.php">Volver al Catálogo</a>
         <?php endif; ?>
     </div>
+
 </body>
 </html>

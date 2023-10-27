@@ -1,8 +1,8 @@
 <?php
 $productos = [
-    ["id" => 1, "nombre" => "Cascos", "descripcion" => "Descripción del producto 1", "precio" => 10],
-    ["id" => 2, "nombre" => "Raton", "descripcion" => "Descripción del producto 2", "precio" => 15],
-    ["id" => 3, "nombre" => "Teclado", "descripcion" => "Descripción del producto 3", "precio" => 20]
+    ["id" => 1, "nombre" => "Cascos", "descripcion" => "Auriculares para una experiencia de sonido inmersiva", "precio" => 10],
+    ["id" => 2, "nombre" => "Raton", "descripcion" => "Ratón ergonómico para una navegación precisa", "precio" => 15],
+    ["id" => 3, "nombre" => "Teclado", "descripcion" => "Teclado mecánico para una escritura cómoda y rápida", "precio" => 20]
 ];
 
 $totalCompra = 0;
@@ -17,3 +17,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 require "ejercicio05.view.php";
+?>
