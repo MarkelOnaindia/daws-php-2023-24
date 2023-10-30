@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
     <style>
-        body {
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
@@ -14,13 +15,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
-.container {
+.container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    max-width: 600px;
+    max-width: 800px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -71,12 +73,12 @@
     </style>
 </head>
 <body>
-   
+
+    <h1>Catálogo de Productos</h1>
     <div class="container">
-        <h1>Catálogo de Productos</h1>
         <form method="post" action="ejercicio05.php">
             <?php foreach ($productos as $producto): ?>
-                <div>
+                <div class="container2">
                     <label for="producto_<?php echo $producto['id']; ?>">
                         <?php echo $producto["nombre"]; ?> - <?php echo $producto["precio"]; ?>€
                         <p><?php echo $producto["descripcion"]; ?></p>
