@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.producto h3 {
+    margin-top: 0;
+}
+
+.producto-buttons {
+    margin-top: 15px;
+}
+
+.cesta {
+    margin-top: 30px;
+}
+
+.idioma-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.producto.favorito {
+    color: green;
+}
