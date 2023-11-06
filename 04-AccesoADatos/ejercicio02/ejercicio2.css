@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+th, td{
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+input, select{
+    padding: 1em;
+    margin: 1em;
+}
