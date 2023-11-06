@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+th, td{
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+input, select{
+    padding: 1em;
+    margin: 1em;
+}
+
+.busqueda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.busqueda input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.busqueda button {
+    padding: 1px 2px;
+    width: 50%;
+    height: 50%;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
