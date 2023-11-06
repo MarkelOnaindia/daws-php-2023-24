@@ -46,6 +46,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+if (isset($_GET["vaciarLista"]) && $_GET["vaciarLista"] == 1) {
+    try {
+        $query = "DELETE FROM lista_compra";
+        $stmt = $dbh->prepare($query);
+        $stmt->execute();
+        echo "Lista de compras vaciada correctamente.";
+    } catch (PDOException $e) {
+        echo "Error al vaciar la lista de compras.";
+    }
+}
+
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    try {
+        $query = "DELETE FROM lista_compra WHERE id = :id";
+        $stmt = $dbh->prepare($query);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        header("Location: ejercicio1.php");
+    } catch (PDOException $e) {
+        echo "Error al eliminar el producto.";
+    }
+}
 
 $query = "SELECT id, elemento FROM lista_compra";
 $stmt = $dbh->prepare($query);

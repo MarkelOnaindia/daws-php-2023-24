@@ -10,23 +10,24 @@
 
     <h1>Lista de Compras</h1>
 
-
-        <table border="1">
-            <thead>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($productos as $producto): ?>
                 <tr>
-                    <th>ID</th>
-                    <th>Producto</th>
+                    <td><?php echo $producto['id']; ?></td>
+                    <td><?php echo $producto['elemento']; ?></td>
+                    <td><a href="ejercicio1.php?id=<?php echo $producto['id']; ?>">Eliminar</a></td>
                 </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($productos as $producto): ?>
-                    <tr>
-                        <td><?php echo $producto['id']; ?></td>
-                        <td><?php echo $producto['elemento']; ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 
     <h2>Añadir nuevo producto:</h2>
     <form action="ejercicio1.php" method="post">
@@ -34,5 +35,6 @@
         <input type="text" id="producto" name="producto" required>
         <button type="submit">Añadir Producto</button>
     </form>
+    <p><a href="ejercicio1.php?vaciarLista=1">Vaciar Lista</a></p>
 </body>
 </html>
