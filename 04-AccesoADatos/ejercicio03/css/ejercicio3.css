@@ -1,6 +1,20 @@
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    width: 50%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-gap: 3em;
 }
 
 th, td{
@@ -12,7 +26,6 @@ th, td{
 form{
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
 }
 
 input, select{
@@ -44,4 +57,8 @@ input, select{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.notificacion{
+    text-align: left;
 }
