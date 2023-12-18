@@ -1,6 +1,6 @@
 <?php
 
-namespace ejercicio3\models;
+namespace ejercicio4\models;
 
 abstract class Poligono {
     private $color;

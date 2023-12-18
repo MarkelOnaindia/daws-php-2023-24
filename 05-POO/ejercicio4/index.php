@@ -4,9 +4,9 @@ include 'models/poligono.php';
 include 'models/cuadrado.php';
 include 'models/triangulo.php';
 
-use ejercicio3\models\Poligono;
-use ejercicio3\models\Cuadrado;
-use ejercicio3\models\Triangulo;
+use ejercicio4\models\Poligono;
+use ejercicio4\models\Cuadrado;
+use ejercicio4\models\Triangulo;
 
 
 $cuadrado = new Cuadrado();

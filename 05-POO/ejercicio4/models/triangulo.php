@@ -1,6 +1,6 @@
 <?php
 
-namespace ejercicio3\models;
+namespace ejercicio4\models;
 
 class Triangulo extends Poligono{
     public function area(){
