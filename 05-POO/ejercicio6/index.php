@@ -10,10 +10,10 @@ function division($dividendo, $divisor) {
 
 try {
     $resultado = division(10, 2);
-    echo "Resultado de la división: $resultado\n";
-
+    echo "Resultado de la división: $resultado";
+    echo "<br>";
     $resultado = division(5, 0);
     echo "Este mensaje no se imprimirá debido a la excepción.\n";
 } catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
+    echo "Error: " . $e->getMessage();
 }
