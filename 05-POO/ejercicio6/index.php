@@ -13,7 +13,7 @@ try {
     echo "Resultado de la división: $resultado";
     echo "<br>";
     $resultado = division(5, 0);
-    echo "Este mensaje no se imprimirá debido a la excepción.\n";
+    echo "Este mensaje no se imprimirá debido a la excepción.";
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
